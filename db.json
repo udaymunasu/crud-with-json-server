@@ -1,0 +1,185 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "uday",
+      "lastName": "munasu",
+      "email": "uday@gmail.com",
+      "mobile": 9515099037,
+      "weight": 75,
+      "height": 5.9,
+      "bmi": 2.154553289284688,
+      "bmiResult": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "Yes",
+      "package": "Quarterly",
+      "important": [
+        "Energy and Endurance",
+        "Fitness"
+      ],
+      "haveGymBefore": "No",
+      "enquiryDate": "2023-04-19T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "firstName": "ritish",
+      "lastName": "Motukuri",
+      "email": "ritish@gmail.com",
+      "mobile": 6302141453,
+      "weight": 75,
+      "height": 5.9,
+      "bmi": 2.154553289284688,
+      "bmiResult": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "Yes",
+      "package": "monthly",
+      "important": [
+        "Energy and Endurance",
+        "Fitness"
+      ],
+      "haveGymBefore": "No",
+      "enquiryDate": "2023-04-19T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "firstName": "racha",
+      "lastName": "sai",
+      "email": "racha@gmail.com",
+      "mobile": 9963751910,
+      "weight": 95,
+      "height": 5.9,
+      "bmi": 3.154553289284688,
+      "bmiResult": "overweight",
+      "gender": "Male",
+      "requireTrainer": "Yes",
+      "package": "yearly",
+      "important": [
+        "Energy and Endurance",
+        "Fitness"
+      ],
+      "haveGymBefore": "No",
+      "enquiryDate": "2023-04-19T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "firstName": "racha",
+      "lastName": "varshini",
+      "email": "varshini@gmail.com",
+      "mobile": 7012345161,
+      "weight": 60,
+      "height": 5.4,
+      "bmi": 2.05761316872428,
+      "bmiResult": "Underweight",
+      "gender": "Female",
+      "requireTrainer": "Yes",
+      "package": "Monthly",
+      "important": [
+        "Healthier Digestive System",
+        "Fitness"
+      ],
+      "haveGymBefore": "No",
+      "enquiryDate": "2023-04-26T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "firstName": "akshay",
+      "lastName": "manohar",
+      "email": "manohar@gmail.com",
+      "mobile": 7234234237,
+      "weight": 100,
+      "height": 5.1,
+      "bmi": 3.8446751249519417,
+      "bmiResult": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "Yes",
+      "package": "Monthly",
+      "important": [
+        "Energy and Endurance",
+        "Healthier Digestive System",
+        "Fitness"
+      ],
+      "haveGymBefore": "No",
+      "enquiryDate": "2023-04-28T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "firstName": "rajesh",
+      "lastName": "kutrapali",
+      "email": "kutrapali@gmail.com",
+      "mobile": 342567819,
+      "weight": 120,
+      "height": 5.5,
+      "bmi": 3.9669421487603307,
+      "bmiResult": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "Yes",
+      "package": "Quarterly",
+      "important": [
+        "Energy and Endurance",
+        "Healthier Digestive System",
+        "Fitness"
+      ],
+      "haveGymBefore": "Yes",
+      "enquiryDate": "2023-04-28T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "firstName": "howard",
+      "lastName": "wollowitz",
+      "email": "howard@gmail.com",
+      "mobile": 7892266677,
+      "weight": 200,
+      "height": 3.9,
+      "bmi": 13.149243918474689,
+      "bmiResult": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "Yes",
+      "package": "Quarterly",
+      "important": [
+        "Energy and Endurance",
+        "Healthier Digestive System",
+        "Fitness"
+      ],
+      "haveGymBefore": "Yes",
+      "enquiryDate": "2023-04-28T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "firstName": "divya",
+      "lastName": "rapolu BETHU",
+      "email": "divya @gmail.com",
+      "mobile": 7098567345,
+      "weight": 65,
+      "height": 5.3,
+      "bmi": 2.313990744037024,
+      "bmiResult": "Underweight",
+      "gender": "Female",
+      "requireTrainer": "No",
+      "package": "Quarterly",
+      "important": [
+        "Toxic Fat reduction",
+        "Energy and Endurance",
+        "Fitness"
+      ],
+      "haveGymBefore": "No",
+      "enquiryDate": "2023-04-28T18:30:00.000Z",
+      "id": 8
+    }
+  ]
+}
