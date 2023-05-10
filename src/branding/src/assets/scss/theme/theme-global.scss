@@ -1,0 +1,27 @@
+@import "./palettes/blue.scss";
+@use "sass:map";
+
+$vars: ();
+
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index-1) +$replace +str-replace(str-replace($string, $index + str-length($search)), $search, $replace);
+    };
+    @return $string;
+};
+
+
+@function v2c($var) {
+    @return map.get($vars, str-replace(str-replace($var, ')',''), 'var(--ds-', ''));
+};
+
+
+@mixin ds-theme($params) {
+    $vars: map.merge($params, $themeFont) ;
+    @each $vars, $value in $vars {
+        #{"--ds-"+ $vars}: $value
+    }
+}
+
+$CP1: var(--ds-primary-1)
