@@ -33,6 +33,7 @@ import { MatListModule } from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import { AgGridModule } from 'ag-grid-angular';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     UsersComponent,
     EditComponent,
     ListComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

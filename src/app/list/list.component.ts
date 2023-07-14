@@ -9,6 +9,7 @@ import { GridOptions } from 'ag-grid-community';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 export interface SortingInterface {
   firstName: string;
@@ -19,6 +20,14 @@ export interface SortingInterface {
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
+  animations: [
+    trigger('slideFromLeft', [
+      transition(':enter', [
+        style({ transform: ' translateX(-100%)'}),
+        animate('0.5s', style({  transform: 'translateX(0)'}))
+      ])
+    ])
+  ]
 })
 export class ListComponent implements OnInit {
   fileName = 'ExcelSheet.xlsx';
@@ -44,6 +53,8 @@ export class ListComponent implements OnInit {
 
   public rowData$!: User[];
 
+  userLength
+
 
   searchValue: string = '';
   searchForm = this.fb.group({
@@ -67,6 +78,8 @@ export class ListComponent implements OnInit {
         this.dataSource = new MatTableDataSource(this.users);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
+        this.userLength = this.users.length;
+        console.log("this.userLength", this.userLength)
       },
       error: (err) => {
         console.log(err);

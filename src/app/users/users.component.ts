@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -9,7 +10,27 @@ import { UserService } from '../services/user.service';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styles: [],
+  styleUrls: ['./users.component.scss'],
+  animations: [
+    trigger('slideFromRight', [
+      transition(':enter', [
+        style({ transform: ' translateX(100%)'}),
+        animate('0.5s', style({  transform: 'translateX(0)'}))
+      ]),
+      transition(':leave', [
+        animate('0.5s', style({  transform: 'translateX(-100%)'}))
+      ])
+    ]),
+    trigger('slideFromLeft', [
+      transition(':enter', [
+        style({ transform: ' translateX(-100%)'}),
+        animate('0.5s', style({  transform: 'translateX(0)'}))
+      ]),
+      transition(':leave', [
+        animate('0.5s', style({  transform: 'translateX(100%)'}))
+      ])
+    ])
+  ]
 })
 export class UsersComponent implements OnInit {
   userId!: number;
@@ -32,6 +53,8 @@ export class UsersComponent implements OnInit {
       .subscribe({
         next: (res) => {
           this.userDetails = res;
+
+          console.log("this.userDetails", this.userDetails)
         },
         error: (err) => {
           console.log(err);
